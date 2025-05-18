@@ -41,9 +41,6 @@ This project implements **Neural Style Transfer** using a custom TensorFlow pipe
 - Final stylized image saved as `stylized_output.jpg`
 - Easy to reuse the pipeline with different content/style images
 
----
-
-## 📂 Project Structure (Example)
 
 
 
