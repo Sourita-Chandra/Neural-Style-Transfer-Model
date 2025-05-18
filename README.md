@@ -1,26 +1,18 @@
 # Neural-Style-Transfer-Model
-This project implements Neural Style Transfer using a custom TensorFlow pipeline.
-It blends the content of one image with the style of another, generating a beautiful, stylized output. The model uses a pre-trained VGG19 network to extract features and optimize a new image that captures the desired content and artistic style.
-\n
-💡 Features
-Custom implementation of Neural Style Transfer
-Uses VGG19 for feature extraction
-Style and content loss based training
-Supports any combination of content & style images
-Final stylized image is saved for future use
-🛠️ Technologies Used
-Python
-TensorFlow 2.x
-NumPy
-PIL (Pillow)
-Matplotlib
-🧠 How It Works
-Load and preprocess the content and style images
-Extract feature representations using VGG19
-Define and compute content/style losses
-Use gradient descent to update the generated image
-Save the stylized output image
-📦 Output
-Stylized image saved as stylized_output.jpg
-Easy to reuse with different content/style combinations
+# 🖼️ Neural Style Transfer with TensorFlow
+
+This project implements **Neural Style Transfer** using a custom pipeline in **TensorFlow 2**. It generates a new image that combines the **content of one image** with the **style of another**, producing visually appealing artistic results.
+
+
+## 🧠 How It Works
+
+1. **Load and preprocess** the content and style images
+2. Use **VGG19** (pre-trained on ImageNet) to extract feature maps from specific layers
+3. Compute:
+   - **Content Loss** (difference in content features)
+   - **Style Loss** using **Gram Matrices** (to capture textures and patterns)
+4. Optimize the generated image using **Adam optimizer**
+5. Save the final stylized image
+
+
 
